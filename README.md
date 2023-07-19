@@ -11,3 +11,9 @@ This project should be only used with Jetbrains DataGrip.
 - **reset-password.sql** to reset the password of the user *admin*
 - **set-password.sql** to set the password of the user *admin* to *admin1* for testing
 - **set-license.sql** to set the 
+
+## Homebrew formulae
+
+- **sonarqube-dev.rb** for the Developer Edition
+- **sonarqube-ent.rb** for the Enterprise Edition
+- **sonarqube-dat.rb** for the Datacenter Edition
