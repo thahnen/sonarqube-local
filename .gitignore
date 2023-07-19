@@ -1,0 +1,6 @@
+# macOS
+**/.DS_Store
+
+# IntelliJ -> SonarLint plug-in
+.idea/sonarlint
+.idea/sonarqube-local.iml
