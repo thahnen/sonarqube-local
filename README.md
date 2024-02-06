@@ -1,10 +1,10 @@
-# sonarqube-local: Scripts for the local SonarQube instance(s)
+# sonarqube-local: Utilities for local SonarQube instance(s)
 
-This repository contains scripts and documentation for working with the local instance(s) of
-SonarQube. Scripts working only with specific versions of SonarQube are marked with the information
-required.
+This repository contains scripts and utilities for working with local instance(s) of SonarQube.
+Scripts working only with specific versions of SonarQube are marked with the information required.
 
-This project should be only used with Jetbrains DataGrip.
+This project should be only used with Jetbrains DataGrip. The Homebrew formulae should work with
+either macOS or Linux!
 
 ## SQL Scripts
 

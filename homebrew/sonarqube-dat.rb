@@ -1,7 +1,7 @@
 class SonarqubeDat < Formula
   desc "Manage code quality (Datacenter Edition)"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.1.0.73491.zip"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.4.0.87286.zip"
   sha256 "2cdbec9904a59330c780b735a9882ffad4d67545b099bbe7de38756737bddfb4"
   license "LGPL-3.0-or-later"
 

@@ -1,7 +1,7 @@
 class SonarqubeDev < Formula
   desc "Manage code quality (Developer Edition)"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-10.1.0.73491.zip"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-10.4.0.87286.zip"
   sha256 "d645baeb541412cffad371d06e56ed9a4562ff55429a6d9861ed8b9e06619e44"
   license "LGPL-3.0-or-later"
 
