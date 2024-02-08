@@ -2,7 +2,7 @@ class SonarqubeEnt < Formula
   desc "Manage code quality (Enterprise Edition)"
   homepage "https://www.sonarqube.org/"
   url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-10.4.0.87286.zip"
-  sha256 "09f31dd7f1c485b97ac3b5739d5460de62a4d99937b06ee59b4a3800a65d3405"
+  sha256 "22569a4abc85e27f6410f74af8c7a0de015ba46e83aab68c063690c62e6a9aa6"
   license "LGPL-3.0-or-later"
 
   livecheck do
@@ -16,8 +16,8 @@ class SonarqubeEnt < Formula
     platform = OS.mac? ? "macosx-universal-64" : "linux-x86-64"
 
     inreplace buildpath/"bin"/platform/"sonar.sh",
-      %r{^PIDFILE="\./\$APP_NAME\.pid"$},
-      "PIDFILE=#{var}/run-ent/$APP_NAME.pid"
+      %r{^PIDFILE="\$PIDDIR/\$APP_NAME\.pid"$},
+      "PIDFILE=#{var}/sonarqube-ent/$APP_NAME.pid"
 
     inreplace "conf/sonar.properties" do |s|
       # Write log/data/temp files outside of installation directory
@@ -33,7 +33,6 @@ class SonarqubeEnt < Formula
   end
 
   def post_install
-    (var/"run-ent").mkpath
     (var/"sonarqube-ent/logs").mkpath
   end
 
