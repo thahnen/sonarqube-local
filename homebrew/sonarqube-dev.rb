@@ -47,6 +47,9 @@ class SonarqubeDev < Formula
   service do
     # in case of instances running, stop them all
     run [opt_bin/"brew", "services", "stop", "sonarqube"]
+    run [opt_bin/"brew", "services", "stop", "sonarqube-dev-79"]
+    run [opt_bin/"brew", "services", "stop", "sonarqube-dev-89"]
+    run [opt_bin/"brew", "services", "stop", "sonarqube-dev-99"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dat"]
 

@@ -17,9 +17,12 @@ either macOS or Linux!
 A local formulae can be installed via
 > brew install ${project_loc}/homebrew/${formulae_name}
 
-- **sonarqube-dev.rb** for the Developer Edition
-- **sonarqube-ent.rb** for the Enterprise Edition
-- **sonarqube-dat.rb** for the Datacenter Edition
+- **sonarqube-dev.rb** for the latest Developer Edition
+- **sonarqube-dev-79.rb** for the 7.9 LTS Developer Edition
+- **sonarqube-dev-89.rb** for the 8.9 LTS Developer Edition
+- **sonarqube-dev-99.rb** for the 9.9 LTS Developer Edition
+- **sonarqube-ent.rb** for the latest Enterprise Edition
+- **sonarqube-dat.rb** for the latest Datacenter Edition
 
 The services status can be listed with
 > brew services list
