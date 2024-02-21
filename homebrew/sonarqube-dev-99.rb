@@ -29,7 +29,7 @@ class SonarqubeDev99 < Formula
     libexec.install Dir["*"]
     env = Language::Java.overridable_java_home_env("17")
     env["PATH"] = "$JAVA_HOME/bin:$PATH"
-    (bin/"sonar-dev-99").write_env_script libexec/"bin"/platform/"sonar.sh", env
+    (bin/"sonarqube-dev-99").write_env_script libexec/"bin"/platform/"sonar.sh", env
   end
 
   def post_install
@@ -53,7 +53,7 @@ class SonarqubeDev99 < Formula
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dat"]
 
-    run [opt_bin/"sonar-dev-99", "console"]
+    run [opt_bin/"sonarqube-dev-99", "console"]
     keep_alive true
   end
 end

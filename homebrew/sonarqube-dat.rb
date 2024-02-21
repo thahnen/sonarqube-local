@@ -6,7 +6,7 @@ class SonarqubeDat < Formula
   license "LGPL-3.0-or-later"
 
   livecheck do
-    url "https://www.sonarsource.com/page-data/products/sonarqube/downloads/page-data.json"
+    url "https://www.sonarsource.com/page-data/products/sonarqube/downloads/success-download-data-center-edition/page-data.json"
     regex(/sonarqube-datacenter[._-]v?(\d+(?:\.\d+)+)\.zip/i)
   end
 
@@ -29,7 +29,7 @@ class SonarqubeDat < Formula
     libexec.install Dir["*"]
     env = Language::Java.overridable_java_home_env("17")
     env["PATH"] = "$JAVA_HOME/bin:$PATH"
-    (bin/"sonar-dat").write_env_script libexec/"bin"/platform/"sonar.sh", env
+    (bin/"sonarqube-dat").write_env_script libexec/"bin"/platform/"sonar.sh", env
   end
 
   def post_install
@@ -53,7 +53,7 @@ class SonarqubeDat < Formula
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-99"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent"]
 
-    run [opt_bin/"sonar-dat", "console"]
+    run [opt_bin/"sonarqube-dat", "console"]
     keep_alive true
   end
 end
