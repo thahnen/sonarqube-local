@@ -10,12 +10,19 @@ either macOS or Linux!
 
 - **reset-password.sql** to reset the password of the user *admin*
 - **set-password.sql** to set the password of the user *admin* to *admin1* for testing
+
+Regarding licensing of SonarQube editions other than Community, there is either a SQL script:
+
 - **set-license.sql** to set the license instead of using the UI
+
+or the SonarQube Web API can be used by invoking the following REST API endpoint with HTTP POST:
+
+> curl -X POST http://localhost:9000/api/editions/set_license?license={license key}
 
 ## Homebrew formulae
 
 A local formulae can be installed via
-> brew install ${project_loc}/homebrew/${formulae_name}
+> brew install {local repository directory}/homebrew/{formulae name with suffix}
 
 - **sonarqube-dev.rb** for the latest Developer Edition
 - **sonarqube-dev-79.rb** for the 7.9 LTS Developer Edition
