@@ -51,6 +51,9 @@ class SonarqubeDat < Formula
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-79"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-89"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-99"]
+    run [opt_bin/"brew", "services", "stop", "sonarqube-ent-79"]
+    run [opt_bin/"brew", "services", "stop", "sonarqube-ent-89"]
+    run [opt_bin/"brew", "services", "stop", "sonarqube-ent-99"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent"]
 
     run [opt_bin/"sonarqube-dat", "console"]

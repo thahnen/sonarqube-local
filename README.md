@@ -22,6 +22,9 @@ A local formulae can be installed via
 - **sonarqube-dev-89.rb** for the 8.9 LTS Developer Edition
 - **sonarqube-dev-99.rb** for the 9.9 LTS Developer Edition
 - **sonarqube-ent.rb** for the latest Enterprise Edition
+- **sonarqube-ent-79.rb** for the 7.9 LTS Enterprise Edition
+- **sonarqube-ent-89.rb** for the 8.9 LTS Enterprise Edition
+- **sonarqube-ent-99.rb** for the 9.9 LTS Enterprise Edition
 - **sonarqube-dat.rb** for the latest Datacenter Edition
 
 The services status can be listed with
