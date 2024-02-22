@@ -16,13 +16,12 @@ Regarding licensing of SonarQube editions other than Community, there is either 
 - **set-license.sql** to set the license instead of using the UI
 
 or the SonarQube Web API can be used by invoking the following REST API endpoint with HTTP POST:
-
 > curl -X POST http://localhost:9000/api/editions/set_license?license={license key}
 
 ## Homebrew formulae
 
 A local formulae can be installed via
-> brew install {local repository directory}/homebrew/{formulae name with suffix}
+> brew install {local repository directory}/homebrew/{formulae name with file suffix}
 
 - **sonarqube-dev.rb** for the latest Developer Edition
 - **sonarqube-dev-79.rb** for the 7.9 LTS Developer Edition
@@ -34,11 +33,15 @@ A local formulae can be installed via
 - **sonarqube-ent-99.rb** for the 9.9 LTS Enterprise Edition
 - **sonarqube-dat.rb** for the latest Datacenter Edition
 
+Updates can be done over all installed packages with Homebrew, for this "custom" formulaes rather
+use take the manual approach:
+> brew upgrade {formulae name without file suffix}
+
 The services status can be listed with
 > brew services list
 
 A service can be started with
-> brew services start {formulae name without suffix}
+> brew services start {formulae name without file suffix}
 
 A service can be stopped with
-> brew services stop {formulae name without suffix}
+> brew services stop {formulae name without file suffix}
