@@ -1,8 +1,8 @@
 class SonarqubeDat < Formula
   desc "Manage code quality (Datacenter Edition)"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.4.1.88267.zip"
-  sha256 "7c11101063b5641d7967b31cc69ad25a19130a0671083845da5b138dc3d854ab"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.5.0.89998.zip"
+  sha256 "df9786ec0823b4e1adfd8298939a22f7fbab655168865e112f13e702ffd6d850"
   license "LGPL-3.0-or-later"
 
   livecheck do
@@ -48,10 +48,8 @@ class SonarqubeDat < Formula
     # in case of instances running, stop them all
     run [opt_bin/"brew", "services", "stop", "sonarqube"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev"]
-    run [opt_bin/"brew", "services", "stop", "sonarqube-dev-79"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-89"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-99"]
-    run [opt_bin/"brew", "services", "stop", "sonarqube-ent-79"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent-89"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent-99"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent"]

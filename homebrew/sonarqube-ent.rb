@@ -1,8 +1,8 @@
 class SonarqubeEnt < Formula
   desc "Manage code quality (Enterprise Edition)"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-10.4.1.88267.zip"
-  sha256 "810f6a4231542deb39a4a998d912ea6702b2ba2d07f5326d80eac3d645ca634a"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-10.5.0.89998.zip"
+  sha256 "2051560101217711a0af399f1531cdd888b926a3bc169df0e4522d95ab648191"
   license "LGPL-3.0-or-later"
 
   livecheck do
@@ -48,10 +48,8 @@ class SonarqubeEnt < Formula
     # in case of instances running, stop them all
     run [opt_bin/"brew", "services", "stop", "sonarqube"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev"]
-    run [opt_bin/"brew", "services", "stop", "sonarqube-dev-79"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-89"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-99"]
-    run [opt_bin/"brew", "services", "stop", "sonarqube-ent-79"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent-89"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent-99"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dat"]
