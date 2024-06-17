@@ -1,8 +1,8 @@
 class SonarqubeEnt < Formula
   desc "Manage code quality (Enterprise Edition)"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-10.5.0.89998.zip"
-  sha256 "2051560101217711a0af399f1531cdd888b926a3bc169df0e4522d95ab648191"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-10.5.1.90531.zip"
+  sha256 "ce941390342c88956d0c73a702beaa1f44e4417bbc5908946f01269f01735573"
   license "LGPL-3.0-or-later"
 
   livecheck do
