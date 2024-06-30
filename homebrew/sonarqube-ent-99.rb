@@ -1,5 +1,5 @@
 class SonarqubeEnt99 < Formula
-  desc "Manage code quality (Enterprise Edition) 9.9 LTS"
+  desc "Manage code quality (Enterprise Edition) 9.9 LTA"
   homepage "https://www.sonarqube.org/"
   url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-9.9.5.90363.zip"
   sha256 "c8a850e3c50639f4ff476631657b647ee7a77e0e03d5e34f6bccda9787348b80"
@@ -48,10 +48,8 @@ class SonarqubeEnt99 < Formula
     # in case of instances running, stop them all
     run [opt_bin/"brew", "services", "stop", "sonarqube"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev"]
-    run [opt_bin/"brew", "services", "stop", "sonarqube-dev-89"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dev-99"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-ent"]
-    run [opt_bin/"brew", "services", "stop", "sonarqube-ent-89"]
     run [opt_bin/"brew", "services", "stop", "sonarqube-dat"]
 
     run [opt_bin/"sonarqube-ent-99", "console"]

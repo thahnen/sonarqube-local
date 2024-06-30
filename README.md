@@ -24,11 +24,9 @@ A local formulae can be installed via
 > brew install {local repository directory}/homebrew/{formulae name with file suffix}
 
 - **sonarqube-dev.rb** for the latest Developer Edition
-- **sonarqube-dev-89.rb** for the 8.9 LTS Developer Edition
-- **sonarqube-dev-99.rb** for the 9.9 LTS Developer Edition
+- **sonarqube-dev-99.rb** for the 9.9 LTA Developer Edition
 - **sonarqube-ent.rb** for the latest Enterprise Edition
-- **sonarqube-ent-89.rb** for the 8.9 LTS Enterprise Edition
-- **sonarqube-ent-99.rb** for the 9.9 LTS Enterprise Edition
+- **sonarqube-ent-99.rb** for the 9.9 LTA Enterprise Edition
 - **sonarqube-dat.rb** for the latest Datacenter Edition
 
 Updates can be done over all installed packages with Homebrew, for this "custom" formulaes rather
