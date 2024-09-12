@@ -1,7 +1,7 @@
 class SonarqubeDat < Formula
   desc "Manage code quality (Datacenter Edition)"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.5.1.90531.zip"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-datacenter/sonarqube-datacenter-10.6.0.92116.zip"
   sha256 "792ad3075b1ac4579c5a66e0c435240b29f535497915750a1bb9890e6462c6ca"
   license "LGPL-3.0-or-later"
 
@@ -9,8 +9,6 @@ class SonarqubeDat < Formula
     url "https://www.sonarsource.com/page-data/products/sonarqube/downloads/success-download-data-center-edition/page-data.json"
     regex(/sonarqube-datacenter[._-]v?(\d+(?:\.\d+)+)\.zip/i)
   end
-
-  depends_on "openjdk@17"
 
   def install
     platform = OS.mac? ? "macosx-universal-64" : "linux-x86-64"

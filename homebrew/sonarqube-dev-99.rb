@@ -1,7 +1,7 @@
 class SonarqubeDev99 < Formula
   desc "Manage code quality (Developer Edition) 9.9 LTA"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-9.9.5.90363.zip"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-developer/sonarqube-developer-9.9.6.92038.zip"
   sha256 "b2a5c45ca440c73f32558a229a7c1d31e6c461945eda514ef8c395011665acd0"
   license "LGPL-3.0-or-later"
 
@@ -9,8 +9,6 @@ class SonarqubeDev99 < Formula
     url "https://www.sonarsource.com/page-data/products/sonarqube/downloads/page-data.json"
     regex(/sonarqube-developer-9[._-]v?(\d+(?:\.\d+)+)\.zip/i)
   end
-
-  depends_on "openjdk@17"
 
   def install
     platform = OS.mac? ? "macosx-universal-64" : "linux-x86-64"

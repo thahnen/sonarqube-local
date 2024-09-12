@@ -1,16 +1,14 @@
 class SonarqubeEnt99 < Formula
   desc "Manage code quality (Enterprise Edition) 9.9 LTA"
   homepage "https://www.sonarqube.org/"
-  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-9.9.5.90363.zip"
+  url "https://binaries.sonarsource.com/CommercialDistribution/sonarqube-enterprise/sonarqube-enterprise-9.9.6.92038.zip"
   sha256 "c8a850e3c50639f4ff476631657b647ee7a77e0e03d5e34f6bccda9787348b80"
   license "LGPL-3.0-or-later"
 
   livecheck do
-      url "https://www.sonarsource.com/page-data/products/sonarqube/downloads/page-data.json"
+    url "https://www.sonarsource.com/page-data/products/sonarqube/downloads/page-data.json"
     regex(/sonarqube-enterprise-9[._-]v?(\d+(?:\.\d+)+)\.zip/i)
   end
-
-  depends_on "openjdk@17"
 
   def install
     platform = OS.mac? ? "macosx-universal-64" : "linux-x86-64"
